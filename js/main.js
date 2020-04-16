@@ -158,10 +158,9 @@ function uploadToServer(filename, file){
 function getFileName(fileExtension) {
     var d = new Date();
     var year = d.getUTCFullYear();
-    var month = d.getUTCMonth()+1;
-    var date = d.getUTCDate();
-	
-    return 'RecordRTC-' + year + month + date + '-' + getRandomString() + '.' + fileExtension;
+    var month = d.getUTCMonth();
+	var date = d.getUTCDate();
+    return 'RecordRTC-' + year + month + date + '-' + getRandomString() + '.' + CLIENT_IP + '.' + fileExtension;
 }
 
 // Generate a random string
