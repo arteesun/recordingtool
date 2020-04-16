@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Speech samples collector | Ross Sundberg</title>
+        <meta name="description" content="Personal website with a section for a speech sample collector for academic purposes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/semantic.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <div class="ui vertical inverted sidebar menu">
+          <a class="active item" href="http://www.rsundberg.ca">Back to rsundberg.ca</a>
+        </div>
+
+        <div class="pusher">
+          <div class="ui inverted vertical masthead center aligned segment">
+
+            <div class="ui container">
+              <div class="ui large secondary inverted pointing menu">
+                <a class="toc item">
+                  <i class="sidebar icon"></i>
+                </a>
+                <a class="active item" href="http://www.rsundberg.ca"><i class="left arrow icon"></i> Back to rsundberg.ca</a>
+              </div>
+            </div>
+
+            <div class="ui text container">
+              <h1 class="ui inverted header">
+                Use the controls below to collect and preview your speech sample
+              </h1>
+            </div>
+
+          </div>
+
+          
+            <div class="ui vertical segment">
+                <div class="ui text container">
+                    <section class="main-controls ui items">
+                        <div class="ui two column stackable grid">
+                            <div class="three wide column middle aligned">
+                                <button class="ui primary large button record">Record</button>
+                            </div>
+                            <canvas class="visualizer thirteen wide column"></canvas>
+                        </div>
+                    </section>
+                    <div class="ui active progress nag">
+                      <div class="bar">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="label">Uploading file</div>
+                    </div>
+                
+                    <h4 class="ui horizontal header divider">
+                        <a href="#">Sound clips</a>
+                    </h4>
+                    <section class="sound-clips"></section>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/vendor/semantic.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
