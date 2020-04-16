@@ -114,7 +114,7 @@ function uploadToServer(filename, file){
 	var formData = new FormData();
     formData.append('video-blob', fileObject);
     formData.append('video-filename', fileObject.name);
-    var url = 'http://rsundberg.ca/user_audio/save.php';
+    var url = 'https://rsundberg.ca/user_audio/save.php';
 
     $.ajax({
     	url: url,
