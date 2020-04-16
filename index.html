@@ -73,6 +73,14 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/vendor/semantic.min.js"></script>
         <script src="js/plugins.js"></script>
+        <script type="application/javascript">
+            var CLIENT_IP; // Set global variable
+            function getIP(json) { // This function is called by the api.ipify.org script below, and returns the user's IP address
+                CLIENT_IP = json.ip; // Set the global variable equal to the user's IP address
+                CLIENT_IP = CLIENT_IP.split('.').join(""); // Remove the . characters from the IP address
+            }
+        </script>
+        <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
